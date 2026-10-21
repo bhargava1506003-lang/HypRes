@@ -1,0 +1,35 @@
+{
+  "sub_questions": [
+    "What is REA (Reverse Engineer Anything): its purpose, who maintains it, its license and maturity?",
+    "What are REA's main features and capabilities (CLI commands, MCP server tools, analysis workflows)?",
+    "Which targets and file formats does REA support (native binaries, JS/Electron apps, websites, .NET, Android APKs, firmware, SQLite, network captures, others)?",
+    "How do you install, configure and use REA, including wiring it into AI coding agents such as Claude Code, Cursor and VS Code via MCP?",
+    "What are REA's limitations and its responsible or legal-use considerations?"
+  ],
+  "entities": [
+    {"name": "REA (Reverse Engineer Anything), github.com/morluto/rea", "type": "software-tool", "required_fields": ["purpose", "features", "supported targets", "usage"]},
+    {"name": "AI coding agents / MCP clients (Claude Code, Cursor, VS Code, Windsurf)", "type": "category", "required_fields": ["integration method"]}
+  ],
+  "required_formats": ["quick overview: concise, scannable, tables or bullets where useful"],
+  "required_sections": [],
+  "required_section_headings": [
+    "## 1. What REA Is",
+    "## 2. Main Features and Capabilities",
+    "## 3. Supported Targets and Formats",
+    "## 4. How to Install and Use It",
+    "## 5. Limitations and Responsible Use"
+  ],
+  "time_horizons": ["current state as of October 2026"],
+  "time_periods": [],
+  "scope_conditions": ["the open-source REA tool at morluto/rea, not general reverse-engineering methodology or unrelated 'REA' entities"],
+  "pipeline_tier": "light",
+  "response_format": "structured",
+  "citation_style": "inline",
+  "levers": {
+    "register": "survey",
+    "register_confidence": "high",
+    "domain_notes": "Sourcing: primary sources first: the morluto/rea GitHub repository (README, docs, releases) and rea.tools. Third-party directories, blog guides and LinkedIn posts are secondary, often inaccurate (e.g. inflated star counts), and must be checked against the repo. Recency: the latest release and docs matter most; features change quickly.",
+    "inference_depth": "surface",
+    "rationale": {"register": "user explicitly chose 'Quick overview': coverage-shaped, no verdict requested", "inference_depth": "a single open-source tool with primary documentation on GitHub"}
+  }
+}

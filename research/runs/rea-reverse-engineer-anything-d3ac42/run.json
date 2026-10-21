@@ -1,0 +1,56 @@
+{
+  "manifest_version": 1,
+  "vault_tag": "rea-reverse-engineer-anything-d3ac42",
+  "profile": "light",
+  "profile_steps": [
+    "1",
+    "2",
+    "10",
+    "15",
+    "16"
+  ],
+  "status": "done",
+  "started_at": "2026-10-21T19:19:23.444716+00:00",
+  "updated_at": "2026-10-21T19:26:08.456324+00:00",
+  "budget_usd": null,
+  "blocked_on": null,
+  "steps": {
+    "1": {
+      "status": "done",
+      "finished_at": "2026-10-21T19:19:47.283795+00:00"
+    },
+    "2": {
+      "status": "done",
+      "finished_at": "2026-10-21T19:22:05.880441+00:00"
+    },
+    "10": {
+      "status": "done",
+      "finished_at": "2026-10-21T19:23:28.740194+00:00"
+    },
+    "15": {
+      "status": "done",
+      "finished_at": "2026-10-21T19:24:40.305000+00:00"
+    },
+    "16": {
+      "status": "done",
+      "finished_at": "2026-10-21T19:25:50.121073+00:00"
+    }
+  },
+  "chapters": {},
+  "spend": {
+    "estimated_usd": 0.0,
+    "sources_fetched": 0,
+    "notes_written": 0,
+    "agents_spawned": 0
+  },
+  "levers": {
+    "register": "survey",
+    "inference_depth": "surface",
+    "domain_notes": "Sourcing: primary sources first: the morluto/rea GitHub repository (README, docs, releases) and rea.tools. Third-party directories, blog guides and LinkedIn posts are secondary, often inaccurate (e.g. inflated star counts), and must be checked against the repo. Recency: the latest release and docs matter most; features change quickly."
+  },
+  "verify": {
+    "passed": true,
+    "at": "2026-10-21T19:26:08.454595+00:00",
+    "failed_checks": []
+  }
+}

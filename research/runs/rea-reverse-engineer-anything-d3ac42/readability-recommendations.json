@@ -1,0 +1,100 @@
+{
+  "recommendations": [
+    {
+      "id": "rec-1",
+      "category": "merge-paragraphs",
+      "severity": "moderate",
+      "section": "## 2. Main Features and Capabilities",
+      "current": "`rea providers --json` and `rea capabilities --json` list what is available. If several providers fit a target, you pick one with `--provider` or the `REA_ANALYSIS_PROVIDER` variable [3].\n\n**Native-binary workflow.** With a provider configured, you can list functions, search symbols, then pull a function dossier, assembly (`rea instructions`) or pseudocode (`rea decompile`) [10].",
+      "recommended": "`rea providers --json` and `rea capabilities --json` list what is available. If several providers fit a target, you pick one with `--provider` or the `REA_ANALYSIS_PROVIDER` variable [3]. Once a provider is configured, the native-binary workflow is to list functions, search symbols, then pull a function dossier, assembly (`rea instructions`) or pseudocode (`rea decompile`) [10].",
+      "rationale": "Two short adjacent paragraphs both describe using the provider engines just listed; merging gives one complete paragraph instead of two fragments."
+    },
+    {
+      "id": "rec-2",
+      "category": "add-whitespace",
+      "severity": "minor",
+      "section": "## 4. How to Install and Use It",
+      "current": "rea decompile ...   # pseudocode for a chosen function\n```\n[1, 3, 10]",
+      "recommended": "rea decompile ...   # pseudocode for a chosen function\n```\n\n[1, 3, 10]",
+      "rationale": "The citation line sits directly against the closing code fence; a blank line keeps it from rendering as if it were part of the block."
+    },
+    {
+      "id": "rec-3",
+      "category": "split-sentence",
+      "severity": "minor",
+      "section": "## 2. Main Features and Capabilities",
+      "current": "Every workflow is exposed both as an MCP tool (for agents) and as a CLI command (for people and scripts), with the same names: `analyze_javascript_application` in MCP is `rea analyze-javascript-application` in the CLI, for example [3, 11].",
+      "recommended": "Every workflow is exposed both as an MCP tool (for agents) and as a CLI command (for people and scripts), with the same names. For example, `analyze_javascript_application` in MCP is `rea analyze-javascript-application` in the CLI [3, 11].",
+      "rationale": "The sentence is about 230 characters; splitting it at the colon puts the example in its own sentence."
+    },
+    {
+      "id": "rec-4",
+      "category": "split-sentence",
+      "severity": "minor",
+      "section": "## 2. Main Features and Capabilities",
+      "current": "A snapshot keeps successful analysis results so that a repeated query with the same target bytes, operation, parameters and provider reuses the saved answer instead of re-running the engine [3].",
+      "recommended": "A snapshot keeps successful analysis results. A repeated query with the same target bytes, operation, parameters and provider then reuses the saved answer instead of re-running the engine [3].",
+      "rationale": "The one-sentence paragraph is about 200 characters; splitting it separates what a snapshot is from when it is reused."
+    },
+    {
+      "id": "rec-5",
+      "category": "split-sentence",
+      "severity": "minor",
+      "section": "## 1. What REA Is",
+      "current": "It connects an agent such as Claude Code, Codex or Cursor to a large set of analysis engines and file parsers, then packages their output as structured Evidence records that the agent can reason over [1, 3].",
+      "recommended": "It connects an agent such as Claude Code, Codex or Cursor to a large set of analysis engines and file parsers. It then packages their output as structured Evidence records that the agent can reason over [1, 3].",
+      "rationale": "The sentence is about 200 characters and holds two separate actions (connect, then package), so it splits cleanly."
+    },
+    {
+      "id": "rec-6",
+      "category": "split-sentence",
+      "severity": "minor",
+      "section": "## 1. What REA Is",
+      "current": "REA returns findings with their evidence, and the agent uses them to ask follow-up questions, explain the behaviour, or write and test its own implementation [1].",
+      "recommended": "REA returns findings with their evidence. The agent uses them to ask follow-up questions, explain the behaviour, or write and test its own implementation [1].",
+      "rationale": "Splitting this 160-character sentence at the conjunction separates REA's output from what the agent does with it."
+    },
+    {
+      "id": "rec-7",
+      "category": "split-sentence",
+      "severity": "minor",
+      "section": "## 4. How to Install and Use It",
+      "current": "Setup asks which agents to configure, shows the planned changes, backs up existing configuration, then adds REA's MCP server and matching workflow instructions.",
+      "recommended": "Setup asks which agents to configure and shows the planned changes. It then backs up existing configuration and adds REA's MCP server and matching workflow instructions.",
+      "rationale": "Four chained steps in one 165-character sentence read more easily as two two-step sentences."
+    },
+    {
+      "id": "rec-8",
+      "category": "split-sentence",
+      "severity": "minor",
+      "section": "## 4. How to Install and Use It",
+      "current": "Setup registers REA for the whole client: it writes `mcpServers.rea` to `~/.claude.json` and installs the skill under `~/.claude/skills`, so every project can call it [2].",
+      "recommended": "Setup registers REA for the whole client. It writes `mcpServers.rea` to `~/.claude.json` and installs the skill under `~/.claude/skills`, so every project can call it [2].",
+      "rationale": "Splitting at the colon makes the headline fact (client-wide registration) its own sentence, ahead of the file-path details."
+    },
+    {
+      "id": "rec-9",
+      "category": "split-sentence",
+      "severity": "minor",
+      "section": "## 5. Limitations and Responsible Use",
+      "current": "The project's disclaimer says decompilation, reconstruction and AI-assisted analysis \"may be incomplete or incorrect\" and that you should verify consequential conclusions before relying on them [7].",
+      "recommended": "The project's disclaimer says decompilation, reconstruction and AI-assisted analysis \"may be incomplete or incorrect\" [7]. It advises verifying consequential conclusions before relying on them [7].",
+      "rationale": "The sentence is about 195 characters; splitting it separates the quoted warning from the advice that follows from it."
+    }
+  ],
+  "summary": {
+    "total_recommendations": 9,
+    "by_category": {
+      "merge-paragraphs": 1,
+      "break-paragraph": 0,
+      "make-list": 0,
+      "make-table": 0,
+      "bold-keyterms": 0,
+      "split-sentence": 7,
+      "remove-hr": 0,
+      "add-whitespace": 1
+    },
+    "highest_severity": "moderate",
+    "expected_net_char_delta": 10
+  }
+}

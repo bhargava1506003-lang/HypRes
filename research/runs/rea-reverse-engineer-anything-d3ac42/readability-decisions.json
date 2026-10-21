@@ -1,0 +1,17 @@
+{
+  "total_recommendations": 9,
+  "applied": [
+    "rec-1",
+    "rec-2",
+    "rec-3",
+    "rec-4",
+    "rec-5",
+    "rec-6",
+    "rec-7",
+    "rec-8",
+    "rec-9"
+  ],
+  "skipped": [],
+  "edit_failures": [],
+  "net_char_delta_actual": 5
+}

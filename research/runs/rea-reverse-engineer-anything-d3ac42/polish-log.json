@@ -1,0 +1,10 @@
+{"applied": [
+  {"category": "hygiene", "description": "removed non-verbatim scare quotes around \"Evidence\" (now 'Evidence records') and \"providers\" (now plain parenthetical)", "chars_removed": 0},
+  {"category": "hygiene", "description": "unquoted the paraphrased 'intended loop' sentence (see a feature / understand it / build your own version), which reads as paraphrase rather than verbatim README text; rewritten as plain prose", "chars_removed": 2},
+  {"category": "filler", "description": "removed meta-discourse 'This report could not check that number' -> 'That number was not checked'", "chars_removed": 7},
+  {"category": "redundancy", "description": "removed duplicate verbatim repeat of the Notes-app example prompt in section 4 step 3; replaced with a back-reference to the earlier quote", "chars_removed": 70},
+  {"category": "readability", "description": "merged 21 adjacent citation stacks into grouped brackets (e.g. [1][8] -> [1, 8], [1][3][10] -> [1, 3, 10]); numbers preserved verbatim, none dropped", "chars_removed": 0}
+], "escalations": [
+  {"category": "verbatim_quotes", "issue": "Remaining quoted spans could not be checked against the vault because this agent is limited to Read and Edit: '300,000 GitHub stars', 'a similar repository name or copied README does not establish that a download is official.', the Notes-app example prompt, 'not a general browser automation or remote-control surface.', 'new releases include frequent bug fixes,', 'may be incomplete or incorrect', 'not a sandbox.', and the README tagline. The integrity gate should confirm each one is verbatim; any that fail should be unquoted."},
+  {"category": "unsourced_claim", "issue": "Section 1 says 'coverage elsewhere reports very different counts' of GitHub stars but gives no citation. Either cite a source or cut the clause."}
+]}
